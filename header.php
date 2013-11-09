@@ -1,4 +1,3 @@
-testing
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -11,24 +10,53 @@ testing
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('container'); ?>>
+<body <?php body_class(); ?>>
 
-  <header class="header">
+  <section class="container">
 
-      <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+    <header class="header">
+      
+      <div class="one-third column branding">
 
-      <h2><?php bloginfo( 'description' ); ?></h2>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/wp-content/themes/cvelo/images/c_velo_logo.png" /></a>
+        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-    <nav id="site_navigation" class="main_navigation" role="navigation">
+      </div><!-- .one-third .column .branding -->
 
-      <h3 class="menu-toggle"><?php _e( 'Menu', 'blank' ); ?></h3>
+      <div class="one-third column new_clients">
 
-      <div class="screen_reader_text skip_link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'blank' ); ?>"><?php _e( 'Skip to content', 'blank' ); ?></a></div>
+        <h2>New to C Velo?</h2> <a href="/how-to-get-started">Click here to get started</a>
 
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav_menu' ) ); ?>
+      </div><!-- .one-third .column .new_clients -->
 
-    </nav><!-- #site_navigation .main_navigation -->
+      <div class="one-third column sign_up">
 
-  </header><!-- .header -->
+        <h2>Returning Client?</h2> <a href="http://clients.mindbodyonline.com/ws.asp?studioid=18714&amp;stype=-7&amp;sView=week" target="_blank">Sign up</a>
 
-  <section class="main">
+      </div><!-- .one-third .column .sign_up -->
+
+      <div class="clear"></div>
+
+      <div class="header_border">&nbsp;</div>
+
+      <nav id="site_navigation" class="twelve columns main_navigation" role="navigation">
+
+        <h3 class="menu-toggle"><?php _e( 'Menu', 'blank' ); ?></h3>
+
+        <div class="screen_reader_text skip_link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'blank' ); ?>"><?php _e( 'Skip to content', 'blank' ); ?></a></div>
+
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav_menu' ) ); ?>
+
+      </nav><!-- #site_navigation .main_navigation -->
+
+      <div class="four columns social_media">
+      
+        <p>Connect with us<a href="https://www.facebook.com/pages/C-Velo-Performance-Fitness-Cycling-Studio/236611823028575" target="_blank"><img src="/wp-content/themes/cvelo/images/facebook.png" class="facebook_icon" /></a></p>
+
+      </div>
+
+    </header><!-- .header -->
+
+    <div class="clear"></div>
+
+    <section class="main">

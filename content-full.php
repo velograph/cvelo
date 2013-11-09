@@ -6,7 +6,7 @@
  */
 ?>
 
-<section class="twelve columns content">
+<section class="sixteen columns content">
 
   <article id="post_<?php the_ID(); ?>" <?php post_class(); ?>>
 

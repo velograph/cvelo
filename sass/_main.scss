@@ -1,0 +1,41 @@
+.main {
+  background: #eaeaea;
+  float: left;
+  margin-bottom: 2rem;
+  .article_section {
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+  .content {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .post {
+    margin-bottom: 2rem;
+  }
+  .schedule_table {
+    margin-bottom: 2rem;
+    th {
+      background: #08c;
+      color: #fff;
+      padding: .5rem 0;
+    }
+    td {
+      padding: 1rem;
+    }
+  }
+  .program_portal p {
+    margin: 0 0 1rem 0;
+    padding: 0 .75rem;
+  }
+  h1.home_page_blurb {
+    color: #222;
+    font-family: 'openSansBold';
+    margin: 2rem 0;
+  }
+  p.home_page_blurb {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 0;
+  }
+}

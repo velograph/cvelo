@@ -1,13 +1,144 @@
 /* General Styling
 ================================================== */
 
-body {
+$light_blue: #c5e3ff;
+$border-radius: 2px;
+
+/* Fonts ____________________ */
+
+/* Regular Open Sans */
+@font-face {
+  font-family: 'openSansRegular';
+  src: url('fonts/opensans-regular.eot');
+  src: url('fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans-regular.woff') format('woff'),
+       url('fonts/opensans-regular.ttf') format('truetype'),
+       url('fonts/opensans-regular.svg#webfont') format('svg');
 }
 
-.size-auto, .size-full,
+/* Bold Open Sans */
+@font-face {
+  font-family: 'openSansBold';
+  src: url('fonts/opensans-bold.eot');
+  src: url('fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/opensans-bold.woff') format('woff'),
+       url('fonts/opensans-bold.ttf') format('truetype'),
+       url('fonts/opensans-bold.svg#webfont') format('svg');
+}
+
+
+/* General ____________________ */
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background: #fafafa url(images/body_background.png) no-repeat right top;
+  color: #444;
+  font-family: 'openSansRegular', Helvetica, sans-serif;
+  font-size: 1.4rem; /* 14px */
+}
+
+h1 {
+  font-family: 'openSansRegular';
+  font-size: 2.4rem; /* 24px */
+  font-weight: normal;
+  line-height: 3.15rem;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 1.8rem; /* 18px */
+  font-weight: normal;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.6rem; /* 16px */
+  font-weight: normal;
+  margin: 1rem 0 .5rem 0;
+}
+
+li, p, table, blockquote {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  line-height: 2.65rem;
+}
+
+em {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+img {
+  border-radius: $border-radius;
+  height: auto;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: .5rem;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+a {
+  color: #b20303;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f7af1e;
+}
+
+body {
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, .size-auto, .size-full,
 .size-large, .size-medium,
 .size-thumbnail {
   max-width: 100%;
   height: auto;
 }
 
+.alignleft {
+  float: left;
+  margin-right: 1rem;
+}
+
+.aligncenter {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wp-caption {
+  background: #999;
+  padding: .5rem .25rem;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+
+.screen_reader_text {
+  position: absolute;
+  text-indent: -99999999px;
+}

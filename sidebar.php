@@ -7,7 +7,7 @@
 ?>
   <?php do_action( 'before_sidebar' ); ?>
 
-  <aside class="sidebar">
+  <aside class="four columns sidebar">
 <!-- Load up some default widgets if nothing is added in the Dashboard  -->
   <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

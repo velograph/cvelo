@@ -1,6 +1,74 @@
 /* Header and Navigation
 ================================================== */
 
+.header {
+  color: #fafafa;
+  h1, .screen_reader_text {
+    position: absolute;
+    text-indent: -99999999px;
+  }
+  a {
+    color: #f00;
+  }
+  .header_border {
+    border-bottom: 1px solid #f00;
+  }
+  .new_clients,
+  .sign_up {
+    padding-top: 5rem;
+    text-align: center;
+  }
+  .social_media {
+    padding-top: .5rem;
+    text-align: right;
+    p {
+      margin: .5rem 0 0 0;
+    }
+    .facebook_icon {
+      margin-left: .5rem;
+      width: 24px;
+    }
+  }
+}
+
+.main_navigation {
+  margin-bottom: 1rem;
+  text-align: left;
+  ul {
+    margin: 1rem 0 0;
+    padding-left: 0;
+    position: relative;
+  }
+  li {
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: .5rem 1.5rem 0 0;
+  }
+  a {
+    color: #999;
+  }
+  li a:hover {
+    color: #fff;
+  }
+  ul li:hover ul {
+    display: block;
+  }
+  ul ul {
+    background: #222;
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    width: auto;
+    z-index: 9;
+    li {
+      display: block;
+      font-size: 1.6rem;
+      padding-left: 1rem;
+    }
+  }
+}
+
+
 /* Buttons */
 .menu-toggle {
 }

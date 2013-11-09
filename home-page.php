@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Home Page Template
+ *
+ *  -Simply removed the sidebar call
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -12,11 +14,9 @@
 
 get_header(); ?>
 
-<?php get_sidebar(); ?>
-
   <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part( 'content', 'page' ); ?>
+    <?php get_template_part( 'content', 'home' ); ?>
 
     <?php
       // If comments are open or we have at least one comment, load up the comment template
